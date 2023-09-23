@@ -1,4 +1,4 @@
-import { Switch, Route } from "react-router-dom";
+import { Routes, Route  } from "react-router-dom";
 import { Component } from "react";
 import RegistrationForm from "./components/RegistrationForm";
 
@@ -9,10 +9,10 @@ class App extends Component {
 
   render() {
     return (
-      <Switch>
+      <Routes>
         <Route exact path="/" component={RegistrationForm} />
         <Route exact path="/game" component={Game} />
-      </Switch>
+      </Routes>
     );
   }
 }
